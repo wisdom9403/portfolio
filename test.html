@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/css/reset.css">
+  <link rel="stylesheet" href="dist/css/scss/style2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<!--<video autoplay muted loop class="visual-index">-->
+<!--<source src="dist/img/main_visual.mp4" type="video/mp4">-->
+<!--</video>-->
+<div id="wrapper">
+  <!--<div style="background: red;"class="container box">-->
+  <!--</div>-->
+  <section class="container-workList box float-box">
+
+    <div class="workList--header">
+      <a href="index.html" class="workList--header--trigger"><span></span></a>
+      <h1 class="workList--header--tit"><span class="colorY">W</span>ORKS<span class="colorY">.</span></h1>
+    </div>
+    <figure class="card float-item">
+      <a href="workDetail.html">
+        <div class="img-box">
+          <img class="card--img" src="dist/img/work/thumnail--coco.jpg" alt="card01">
+        </div>
+        <figcaption class="card--caption">
+          <h5 class="card--project">Mobile App</h5>
+          <h3 class="card--tit">
+            코코이찌방야 직원용 앱
+          </h3>
+        </figcaption>
+      </a>
+    </figure>
+    <figure class="card float-item">
+      <a href="workHoeat.html">
+        <div class="img-box">
+          <img class="card--img" src="dist/img/work/hoeat/thumnail--hoeat.jpg" alt="card01">
+        </div>
+        <figcaption class="card--caption">
+          <h5 class="card--project">Mobile App</h5>
+          <h3 class="card--tit">
+            호잇 앱
+          </h3>
+        </figcaption>
+      </a>
+    </figure>
+    <figure class="card float-item">
+      <a href="workmodoo.html">
+        <div class="img-box">
+          <img class="card--img" src="dist/img/work/thumnail--modoo.jpg" alt="card02">
+        </div>
+        <figcaption class="card--caption">
+          <h5 class="card--project">Mobile App</h5>
+          <h3 class="card--tit">
+            모두의 식권 앱
+          </h3>
+        </figcaption>
+      </a>
+    </figure>
+    <figure class="card float-item">
+      <a href="workMacao.html">
+        <div class="img-box">
+          <img class="card--img" src="dist/img/work/thumnail--macao.jpg" alt="card03">
+        </div>
+        <figcaption class="card--caption">
+          <h5 class="card--project">Tablet & Game Design</h5>
+          <h3 class="card--tit">
+            마카오포차 앱
+          </h3>
+        </figcaption>
+      </a>
+    </figure>
+    <figure class="card float-item">
+      <a href="workKukkiwon.html">
+        <div class="img-box">
+          <img class="card--img" src="dist/img/work/thumnail--kukkiwon.jpg" alt="card04">
+        </div>
+        <figcaption class="card--caption">
+          <h5 class="card--project">Web UI Design</h5>
+          <h3 class="card--tit">
+            국기원 관리자 웹
+          </h3>
+        </figcaption>
+      </a>
+    </figure>
+
+  </section>
+
+</div>
+<script src="dist/js/classie.js"></script>
+
+<script type="text/javascript">
+  // window.onload = function () {
+  //   $(".box").each(function () {
+  //     // 개별적으로 Wheel 이벤트 적용
+  //     $(this).on("mousewheel DOMMouseScroll", function (e) {
+  //       e.preventDefault();
+  //       var delta = 0;
+  //       if (!event) event = window.event;
+  //       if (event.wheelDelta) {
+  //         delta = event.wheelDelta / 120;
+  //         if (window.opera) delta = -delta;
+  //       } else if (event.detail) delta = -event.detail / 3;
+  //       var moveTop = null;
+  //       // 마우스휠을 위에서 아래로
+  //       if (delta < 0) {
+  //         if ($(this).next() != undefined) {
+  //           moveTop = $(this).next().offset().top;
+  //           $(this).addClass('test');
+  //
+  //         }
+  //         // 마우스휠을 아래에서 위로
+  //       } else {
+  //         if ($(this).prev() != undefined) {
+  //           moveTop = $(this).prev().offset().top;
+  //
+  //         }
+  //       }
+  //       // 화면 이동 0.8초(800)
+  //       $("html,body").stop().animate({
+  //         scrollTop: moveTop + 'px'
+  //       }, {
+  //         duration: 800, complete: function () {
+  //         }
+  //       });
+  //     });
+  //   });
+  // }
+
+
+  $(function () {
+    $(".float-item--right").click(function () {
+      var url = $(this).attr("href");
+      $(".visual-index").animate({
+        "opacity": "0",
+        "-webkit-transform": "translate3d(-20%, 0, 0)",
+        "transform": "translate3d(-20%, 0, 0)"
+
+      },500, function () {
+        document.location.href = url;
+      });
+
+      return false;
+    });
+    // $("body div").fadeIn(500, function () {
+    //   $(this).animate({
+    //     "top": "150px"
+    //   },1000);
+    // });
+    $("a").click(function () {
+      var url = $(this).attr("href");
+      $("body div").animate({
+        "opacity": "0",
+        "top": "10px"
+      },500, function () {
+        document.location.href = url;
+      });
+
+      return false;
+    });
+    $(".workList--header--trigger").click(function () {
+      var url = $(this).attr("href");
+      $("body div").animate({
+        "-webkit-transform": "translate3d(20%, 0, 0)",
+        "transform": "translate3d(20%, 0, 0)"
+      },500, function () {
+        document.location.href = url;
+      });
+
+      return false;
+    });
+
+  });
+
+  //
+  //
+  // 출처: http://noname2.tistory.com/142 [noname02]
+
+</script>
+</body>
+</html>
