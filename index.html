@@ -69,44 +69,11 @@
 
   </div>
   <script src="dist/js/classie.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
 
   <script type="text/javascript">
-    // window.onload = function () {
-    //   $(".box").each(function () {
-    //     // 개별적으로 Wheel 이벤트 적용
-    //     $(this).on("mousewheel DOMMouseScroll", function (e) {
-    //       e.preventDefault();
-    //       var delta = 0;
-    //       if (!event) event = window.event;
-    //       if (event.wheelDelta) {
-    //         delta = event.wheelDelta / 120;
-    //         if (window.opera) delta = -delta;
-    //       } else if (event.detail) delta = -event.detail / 3;
-    //       var moveTop = null;
-    //       // 마우스휠을 위에서 아래로
-    //       if (delta < 0) {
-    //         if ($(this).next() != undefined) {
-    //           moveTop = $(this).next().offset().top;
-    //           $(this).addClass('test');
-    //
-    //         }
-    //         // 마우스휠을 아래에서 위로
-    //       } else {
-    //         if ($(this).prev() != undefined) {
-    //           moveTop = $(this).prev().offset().top;
-    //
-    //         }
-    //       }
-    //       // 화면 이동 0.8초(800)
-    //       $("html,body").stop().animate({
-    //         scrollTop: moveTop + 'px'
-    //       }, {
-    //         duration: 800, complete: function () {
-    //         }
-    //       });
-    //     });
-    //   });
-    // }
+
     (function() {
       var wrapper = document.getElementById( 'wrapper' ),
         trigger = wrapper.querySelector( 'a.btn--work');
@@ -195,6 +162,18 @@
     //
     //
     // 출처: http://noname2.tistory.com/142 [noname02]
+
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyDmlaH_SvVbp1hJuKuca3Qatm5vuFuRhu4",
+          authDomain: "fbtest-aec3c.firebaseapp.com",
+          databaseURL: "https://fbtest-aec3c.firebaseio.com",
+          projectId: "fbtest-aec3c",
+          storageBucket: "fbtest-aec3c.appspot.com",
+          messagingSenderId: "741415002182"
+      };
+      firebase.initializeApp(config);
+
 
   </script>
 </body>

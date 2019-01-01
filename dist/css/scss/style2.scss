@@ -1112,3 +1112,31 @@ $module: 'coco';
     }
   }
 }
+
+
+/* *****************************
+  Page : container-work work--kukkiwon
+***************************** */
+
+
+.container-work.work--kukkiwon {
+  .visual-wrap {
+    background: url("../../img/work/kukkiwon/kukkiwon--bg.jpg")no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+  }
+  .overview--tit {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .s--desc {
+    font-size:15px;
+    letter-spacing: -0.6px;
+    margin-top: 15px;
+    max-width: none;
+  }
+  .section:last-child {
+    margin-bottom: 250px;
+  }
+}
