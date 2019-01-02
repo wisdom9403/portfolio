@@ -1118,7 +1118,9 @@ $module: 'coco';
   Page : container-work work--kukkiwon
 ***************************** */
 
-
+.bgG {
+  background: #f1f1f1;
+}
 .container-work.work--kukkiwon {
   .visual-wrap {
     background: url("../../img/work/kukkiwon/kukkiwon--bg.jpg")no-repeat;
@@ -1137,6 +1139,6 @@ $module: 'coco';
     max-width: none;
   }
   .section:last-child {
-    margin-bottom: 250px;
+    padding-bottom: 250px;
   }
 }

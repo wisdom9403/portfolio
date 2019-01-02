@@ -800,6 +800,9 @@ body {
 /* *****************************
   Page : container-work work--kukkiwon
 ***************************** */
+.bgG {
+  background: #f1f1f1; }
+
 .container-work.work--kukkiwon .visual-wrap {
   background: url("../../img/work/kukkiwon/kukkiwon--bg.jpg") no-repeat;
   background-size: cover;
@@ -814,6 +817,6 @@ body {
   margin-top: 15px;
   max-width: none; }
 .container-work.work--kukkiwon .section:last-child {
-  margin-bottom: 250px; }
+  padding-bottom: 250px; }
 
 /*# sourceMappingURL=style2.css.map */
