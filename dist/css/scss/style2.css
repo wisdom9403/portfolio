@@ -2,9 +2,11 @@
 @font-face {
   font-family: 'Metropolis';
   src: url("../../fonts/metropolis/Metropolis-Regular.otf"); }
+
 @font-face {
   font-family: 'Metropolis-Black';
   src: url("../../fonts/metropolis/Metropolis-Black.otf"); }
+
 /* fonts */
 .colorW {
   color: #fff; }
@@ -40,12 +42,15 @@ body {
   content: '';
   display: table;
   clear: both; }
+
 .float-box .float-item {
   float: left; }
   .float-box .float-item--right {
     float: right; }
+
 .float-box.float-2 .float-item {
   width: 50%; }
+
 .float-box.float-3 .float-item {
   width: 33%; }
 
@@ -99,6 +104,7 @@ body {
           animation: slidingText 6s ease-in-out 4s;
           animation-fill-mode: both;
           animation-iteration-count: infinite; }
+
 @keyframes slidingText {
   0% {
     transform: translateY(200px);
@@ -375,14 +381,15 @@ body {
   .item,
   .intro__content {
     font-size: 0.85em; } }
+
 @media screen and (max-width: 590px) {
   .item {
     -webkit-flex: 1 0 100%;
     flex: 1 0 100%;
     height: 90vw; }
-
   .intro__title {
     font-size: 2em; } }
+
 /* *****************************
   Page : container-workList
 ***************************** */
@@ -484,6 +491,7 @@ body {
   padding: 50px;
   max-width: 1440px;
   margin: 0 auto; }
+
 .container-work .pro--info {
   color: #fff;
   font-size: 1.4em;
@@ -497,6 +505,7 @@ body {
     display: inline-block; }
   .container-work .pro--info--left dt {
     margin-right: 5px; }
+
 .container-work .s--tit {
   font-size: 1.4em;
   font-weight: bolder;
@@ -505,6 +514,7 @@ body {
     font-size: 5.333em;
     color: rgba(80, 80, 80, 0.07);
     font-family: "Metropolis-Black", Noto Sans KR, sans-serif; }
+
 .container-work .s--desc {
   font-size: 1.167em;
   font-weight: 300;
@@ -515,6 +525,7 @@ body {
   margin: 0 auto;
   word-break: keep-all;
   word-wrap: break-word; }
+
 .container-work .section--column {
   background: url("../../img/work/coco/column.png"); }
 
@@ -522,6 +533,7 @@ body {
   background-image: url("../../img/work/coco/coco--bg.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
 .container-work.work--coco .visual {
   padding: 50px;
   max-width: 1440px;
@@ -548,6 +560,7 @@ body {
   .container-work.work--coco .visual .pro--right .pro--mockup01--img {
     max-width: 600px;
     width: 100%; }
+
 .container-work.work--coco .s--tit {
   color: #652d00; }
 
@@ -592,6 +605,7 @@ body {
   .container-work.work--hoeat .visual-wrap .pro--mockup01--img {
     max-width: 903px;
     width: 100%; }
+
 .container-work.work--hoeat .branding--logo {
   margin-top: 150px; }
   .container-work.work--hoeat .branding--logo img {
@@ -599,6 +613,7 @@ body {
     width: 100%;
     display: inline-block;
     margin: 20px 50px; }
+
 .container-work.work--hoeat .brandColor .color--palattes {
   display: inline-block;
   margin-top: 50px; }
@@ -608,6 +623,7 @@ body {
     .container-work.work--hoeat .brandColor .color--palattes .color img {
       width: 100%;
       max-width: 375px; }
+
 .container-work.work--hoeat .ui img {
   width: 100%;
   display: block;
@@ -632,6 +648,7 @@ body {
   .container-work.work--modoo .visual-wrap .pro--mockup01--img {
     max-width: 903px;
     width: 100%; }
+
 .container-work.work--modoo .overview {
   background: url("../../img/work/modoo/modoo--overviewBg.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -660,10 +677,12 @@ body {
     letter-spacing: -0.6px;
     margin-top: 15px;
     max-width: none; }
+
 .container-work.work--modoo .s--desc {
   max-width: 400px;
   margin: 0;
   padding: 0; }
+
 .container-work.work--modoo .brandColor .color--palattes {
   display: inline-block;
   margin-top: 50px; }
@@ -672,8 +691,10 @@ body {
     .container-work.work--modoo .brandColor .color--palattes .color img {
       width: 100%;
       max-width: 375px; }
+
 .container-work.work--modoo .ui img {
   width: 100%; }
+
 .container-work.work--modoo .section {
   margin: 0;
   max-width: 1200px;
@@ -681,6 +702,7 @@ body {
   padding: 0 20px; }
   .container-work.work--modoo .section.full {
     max-width: none; }
+
 .container-work.work--modoo .section.order {
   position: relative;
   max-width: 1200px;
@@ -705,6 +727,7 @@ body {
       margin-top: -353px; }
     .container-work.work--modoo .section.order .order--mockup--img04 {
       margin-top: -100px; }
+
 .container-work.work--modoo .skew {
   background: url("../../img/work/modoo/modoo--skewbg.png") no-repeat;
   -webkit-background-size: 100%;
@@ -721,14 +744,17 @@ body {
       max-width: 313px;
       margin: 10px;
       width: calc(50% - 20px); }
+
 .container-work.work--modoo .section.magazine .magazine--mockup--bg {
   background: url("../../img/work/modoo/modoo--magazineBg.png") no-repeat;
   background-position: center center;
   -webkit-background-size: contain;
   background-size: contain; }
+
 .container-work.work--modoo .section.magazine .mockup01 {
   width: 100%;
   max-width: 1196px; }
+
 .container-work.work--modoo .section.stat {
   position: relative;
   margin-bottom: 0; }
@@ -738,6 +764,7 @@ body {
   .container-work.work--modoo .section.stat .mockup {
     width: calc(100% + 40px);
     margin: 0 -20px; }
+
 @media (min-width: 950px) {
   .container-work.work--modoo {
     /* Target devices wider than 768px. */ } }
@@ -761,11 +788,13 @@ body {
   padding: 0;
   margin: 0;
   word-break: keep-all; }
+
 .container-work.work--macao .section {
   padding: 0 20px; }
   .container-work.work--macao .section figcaption {
     max-width: 1016px;
     margin: 0 auto -200px auto; }
+
 .container-work.work--macao .overview {
   position: relative;
   height: 100vh;
@@ -778,18 +807,24 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+
 .container-work.work--macao .macao--tit__img {
   max-width: 317px;
   width: 100%; }
+
 .container-work.work--macao .bg--circle .float-item {
   width: 50%; }
+
 .container-work.work--macao .bg--circle .s--desc {
   max-width: 486px; }
+
 .container-work.work--macao .bg--circle .main--mockup img {
   max-width: 904px;
   width: 100%; }
+
 .container-work.work--macao .ta-c .macao--tit__img {
   margin: 0 auto; }
+
 .container-work.work--macao .game--mockup {
   margin-right: -20px; }
   .container-work.work--macao .game--mockup img {
@@ -808,15 +843,23 @@ body {
   background-size: cover;
   width: 100%;
   height: 100vh; }
+
 .container-work.work--kukkiwon .overview--tit {
   font-size: 1.4em;
   font-weight: bold; }
+
 .container-work.work--kukkiwon .s--desc {
   font-size: 15px;
   letter-spacing: -0.6px;
   margin-top: 15px;
   max-width: none; }
+
+.container-work.work--kukkiwon .section {
+  max-width: 2560px;
+  width: 100%; }
+
+.container-work.work--kukkiwon .section:nth-child(2) {
+  max-width: 1079px; }
+
 .container-work.work--kukkiwon .section:last-child {
   padding-bottom: 250px; }
-
-/*# sourceMappingURL=style2.css.map */
