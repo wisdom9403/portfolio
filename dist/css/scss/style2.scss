@@ -1138,6 +1138,13 @@ $module: 'coco';
     margin-top: 15px;
     max-width: none;
   }
+  .section {
+    max-width:2560px;
+    width: 100%;
+  }
+  .section:nth-child(2) {
+    max-width:1079px;
+  }
   .section:last-child {
     padding-bottom: 250px;
   }
