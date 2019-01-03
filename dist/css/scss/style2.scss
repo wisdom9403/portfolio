@@ -1130,7 +1130,7 @@ $module: 'coco';
   }
   .overview--tit {
     font-size: 1.4em;
-    font-weight: bold; 
+    font-weight: bold;
   }
   .s--desc {
     font-size:15px;
@@ -1138,11 +1138,11 @@ $module: 'coco';
     margin-top: 15px;
     max-width: none;
   }
-  .section {
+  .section img{
     max-width:2560px;
     width: 100%;
   }
-  .section:nth-child(2) {
+  .section:nth-child(2) img{
     max-width:1079px;
   }
   .section:last-child {

@@ -854,11 +854,11 @@ body {
   margin-top: 15px;
   max-width: none; }
 
-.container-work.work--kukkiwon .section {
+.container-work.work--kukkiwon .section img {
   max-width: 2560px;
   width: 100%; }
 
-.container-work.work--kukkiwon .section:nth-child(2) {
+.container-work.work--kukkiwon .section:nth-child(2) img {
   max-width: 1079px; }
 
 .container-work.work--kukkiwon .section:last-child {
